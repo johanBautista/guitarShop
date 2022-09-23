@@ -1,13 +1,13 @@
 import Layout from '../../containers/Layout'
 
-const NosotrosPage = () => {
+const BlogPage = () => {
   return (
     <>
       <Layout title='Nosotros'>
-        <p>Nosotros Page</p>
+        <p>Blog Page</p>
       </Layout>
     </>
   )
 }
 
-export default NosotrosPage
+export default BlogPage

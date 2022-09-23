@@ -1,16 +1,26 @@
+import Link from 'next/link'
+import Image from 'next/image'
+import styles from '../styles/Header.module.css'
 
 const Header = () => {
   return (
-    <header>
-        <div className="contenedor">
-            <div className="logo"> </div>
-            <nav>
-                <link rel="stylesheet" href="/" />
-                <link rel="stylesheet" href="/nosotros" />
-                <link rel="stylesheet" href="/blog" />
-                <link rel="stylesheet" href="/tienda" />
-            </nav>
+    <header className={styles.header}>
+      <div className='contenedor'>
+        <div className={styles.barra}>
+          <div className={styles.headerLogo}>
+            <Link href='/'>
+              <Image src='/img/logo.svg' alt='logo guitarra' width={200} height={100} />
+            </Link>
+          </div>
+
+          <nav className={styles.navegacion}>
+            <Link href='/'>Inicio</Link>
+            <Link href='/nosotros'>Nosotros</Link>
+            <Link href='/blog'>Blog</Link>
+            <Link href='/tienda'>Tienda</Link>
+          </nav>
         </div>
+      </div>
     </header>
   )
 }
