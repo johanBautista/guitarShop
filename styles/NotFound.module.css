@@ -1,0 +1,21 @@
+.no_encontrado{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(0 0 0 /.8), rgb(0 0 0 /.7)), url(../public/img/notFound.jpg);  
+    background-size: cover;
+    background-position: 50%;
+    opacity: .6;
+}
+.no_encontrado h1::before{
+    opacity: 1;
+}
+.no_encontrado a{
+    color: var(--primary);
+    text-decoration: none;
+}
+.no_encontrado a:hover{
+    color: blueviolet;
+}
