@@ -7,7 +7,7 @@ const EntradaBlog = ({entrada}) => {
   // eslint-disable-next-line camelcase
   const {titulo, contenido, imagen, published_at} = entrada
   return (
-    <Layout title={titulo}>
+    <Layout page={titulo}>
       <main>
         <h1 className='heading'>{titulo}</h1>
         <article className={styles.entrada}>

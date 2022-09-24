@@ -5,10 +5,17 @@ import styles from '../styles/Entrada.module.css'
 
 const Entrada = ({entrada}) => {
   // eslint-disable-next-line camelcase
-  const {titulo, resumen, imagen, published_at, id, url} = entrada
+  const {titulo, resumen, imagen, published_at, url} = entrada
   return (
     <article>
-      <Image priority='true' src={imagen.url} alt={`imagen de ${titulo}`} layout='responsive' width={800} height={600} />
+      <Image
+        priority='true'
+        src={imagen.url}
+        alt={`imagen de ${titulo}`}
+        layout='responsive'
+        width={800}
+        height={600}
+      />
 
       <div className={styles.contenido}>
         <h3 className={styles.titulo}>{titulo}</h3>

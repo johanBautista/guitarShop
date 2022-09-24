@@ -4,7 +4,7 @@ import styles from '../../styles/Nosotros.module.css'
 const NosotrosPage = () => {
   return (
     <>
-      <Layout title='Nosotros'>
+      <Layout page='Nosotros'>
         <main className='contenedor'>
           <h2 className='heading'>Nosotros</h2>
           <div className={styles.contenido}>

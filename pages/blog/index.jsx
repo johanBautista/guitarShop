@@ -5,10 +5,9 @@ import styles from '../../styles/Blog.module.css'
 // const BlogPage = (props) => {
 // console.log(props.entradas)
 const BlogPage = ({entradas}) => {
-
   return (
     <>
-      <Layout title='Nosotros'>
+      <Layout page='Nosotros'>
         <main className='contenedor'>
           <h2 className='heading'>Blog</h2>
           <div className={styles.blog}>
@@ -22,7 +21,7 @@ const BlogPage = ({entradas}) => {
   )
 }
 export async function getServerSideProps() {
-  const url = `${process.env.API_URL}/blogs`
+  const url = `${process.env.API_URL}/blogs?_sort=created_at:desc`
   const respuesta = await fetch(url)
   const entradas = await respuesta.json()
 
