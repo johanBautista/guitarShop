@@ -3,7 +3,6 @@ import styles from '../styles/Curso.module.css'
 
 const Curso = ({curso}) => {
   const {titulo, contenido, imagen} = curso
-  console.log(imagen)
   return (
     <section>
       <div className={`contenedor ${styles.grid}`}>

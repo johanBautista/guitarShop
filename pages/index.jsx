@@ -5,7 +5,6 @@ import ListaGuitarras from '../components/ListaGuitarras'
 import Layout from '../containers/Layout'
 
 export default function Home({guitarras, curso, entradas}) {
-  // console.log(blog)
   return (
     <>
       <Layout page='Home' guitarra={guitarras[3]}>

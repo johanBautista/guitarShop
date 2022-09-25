@@ -4,7 +4,6 @@ import styles from '../styles/Header.module.css'
 import {useRouter} from 'next/router'
 
 const Header = ({guitarra}) => {
-  console.log(guitarra)
   const router = useRouter()
   return (
     <header className={styles.header}>
@@ -23,6 +22,17 @@ const Header = ({guitarra}) => {
             <Link href='/nosotros'>Nosotros</Link>
             <Link href='/blog'>Blog</Link>
             <Link href='/tienda'>Tienda</Link>
+            <Link href='/carrito'>
+              <a>
+                <Image
+                  src={'/img/carrito.png'}
+                  layout='fixed'
+                  width={30}
+                  height={25}
+                  alt='imagen de carrito de compra'
+                />
+              </a>
+            </Link>
           </nav>
         </div>
         {guitarra && (

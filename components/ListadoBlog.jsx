@@ -2,7 +2,6 @@ import Entrada from '../components/Entrada'
 import styles from '../styles/Blog.module.css'
 
 const ListadoBlog = ({entradas}) => {
-    console.log(entradas);
   return (
     <>
       <h2 className='heading'>Blog</h2>

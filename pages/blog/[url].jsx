@@ -44,7 +44,6 @@ export async function getStaticProps({params: {url}}) {
   // const urlRoute = `${process.env.API_URL}/blogs?url=${id}`
   const respuesta = await fetch(urlRoute)
   const entrada = await respuesta.json()
-  console.log(entrada)
   return {
     props: {
       entrada: entrada[0],
@@ -58,7 +57,6 @@ export async function getStaticProps({params: {url}}) {
 // const url = `${process.env.API_URL}/blogs/${id}`
 //   const respuesta = await fetch(url)
 //   const entradablog = await respuesta.json()
-//   console.log(entradablog)
 //   return {
 //     props: {
 //       entradablog,
