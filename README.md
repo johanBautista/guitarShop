@@ -34,5 +34,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## Important!
--nodejs version 14.20.1
--strapi 3.6.8
+- nodejs version 14.20.1
+- strapi 3.6.8
+- cloudinary
+- npm strapi-provider-upload-cloudinary
