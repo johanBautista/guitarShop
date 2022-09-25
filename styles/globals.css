@@ -1,7 +1,7 @@
 :root {
   --primary: #e99401;
   --negro: #262626;
-  --blanco: #fff;
+  --blanco: rgba(255, 255, 255, 0.707);
   --fuente-principal: "Outfit", sans-serif;
 }
 html {
