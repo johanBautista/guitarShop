@@ -4,9 +4,7 @@ import Layout from '../../containers/Layout'
 import styles from '../../styles/Carrito.module.css'
 
 const CarritoPage = ({carrito, actualizarCantidad, eliminarProducto}) => {
-  console.log('desde carrito', carrito)
   const [total, setTotal] = useState(0)
-  console.log(total);
 
   useEffect(() => {
     const calculoTotal = carrito.reduce((total, producto) => total + (producto.cantidad * producto.precio),0)

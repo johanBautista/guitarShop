@@ -24,7 +24,6 @@ const Entrada = ({entrada}) => {
         <Link href={`/blog/${url}`}>
           <span className={styles.enlace}>Leer entrada</span>
         </Link>
-        {/* <p>{contenido}</p> */}
       </div>
     </article>
   )

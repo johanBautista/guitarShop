@@ -5,10 +5,8 @@ import Layout from '../../containers/Layout'
 import styles from '../../styles/Guitarra.module.css'
 
 const Producto = ({guitarra, agregarCarrito, carrito}) => {
-  console.log(carrito)
   // eslint-disable-next-line camelcase
   const {nombre, descripcion, precio, published_at, imagen, id} = guitarra[0]
-  console.log('imagen', imagen[0].url)
   const testImg = imagen[0].url;
 
   const [cantidad, setCantidad] = useState(1)
@@ -27,7 +25,6 @@ const Producto = ({guitarra, agregarCarrito, carrito}) => {
     }
 
     agregarCarrito(guitarraSeleccionada)
-    console.log('producto', guitarraSeleccionada)
   }
 
   return (
@@ -47,7 +44,6 @@ const Producto = ({guitarra, agregarCarrito, carrito}) => {
           <p className={styles.resumen}>{descripcion}</p>
           <p className={styles.precio}>$ {precio} </p>
 
-          {/* {carrito.cantidad !== 0 ? `${console.log(carrito)}` : 'no hay data'} */}
           <form onSubmit={handleSubmit} className={styles.formulario}>
             <label>Cantidad</label>
             <select value={cantidad} onChange={e => setCantidad(parseInt(e.target.value))}>

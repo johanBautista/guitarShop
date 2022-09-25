@@ -4,7 +4,6 @@ import '../styles/globals.css'
 
 function MyApp({Component, pageProps}) {
   const [carrito, setCarrito] = useState([])
-  console.log('app', carrito)
 
   useEffect(() => {
     const carritoLS = JSON.parse(localStorage.getItem('carrito')) ?? []

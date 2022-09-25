@@ -51,7 +51,6 @@ const Header = ({guitarra}) => {
         <div className={styles.guitarra}>
           <Image layout='fixed' width={500} height={1200} src='/img/header_guitarra.png' />
         </div>
-        // <img className={styles.guitarra} src='/img/header_guitarra.png' />
       )}
     </header>
   )

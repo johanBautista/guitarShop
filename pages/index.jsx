@@ -1,5 +1,4 @@
 import Curso from '../components/Curso'
-// import Entrada from '../components/Entrada'
 import ListadoBlog from '../components/ListadoBlog'
 import ListaGuitarras from '../components/ListaGuitarras'
 import Layout from '../containers/Layout'
@@ -13,7 +12,6 @@ export default function Home({guitarras, curso, entradas}) {
           <ListaGuitarras guitarras={guitarras} />
         </main>
           <Curso curso={curso} />
-          {/* <Entrada entrada={entradas} /> */}
         <section className='contenedor'>
           <ListadoBlog  entradas={entradas}/>
         </section>
